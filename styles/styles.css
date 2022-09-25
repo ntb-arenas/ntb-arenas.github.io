@@ -1,0 +1,25 @@
+/* CSS variables */
+:root {
+  --color-brand: #6608c5;
+  --color-text-primary: #25282b;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  color: var(--color-text-primary);
+}
+
+.title-name {
+  color: var(--color-brand);
+}
+
+.title-button {
+  border: 1px solid var(--color-brand);
+  border-radius: 3px;
+  padding: 10px;
+  color: var(--color-brand);
+  text-decoration: none;
+}
