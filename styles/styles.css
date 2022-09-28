@@ -53,7 +53,7 @@ header {
   height: 90vh;
 }
 
-.about-title {
+.title-about {
   text-align: center;
   font-weight: 500;
   font-size: 32px;
@@ -67,7 +67,10 @@ header {
 article {
   display: flex;
   justify-content: space-around;
-  padding: 50px 100px 50px 100px;
+  /* padding: 50px 100px 50px 100px; */
+  max-width: 1200px;
+  margin: auto;
+  margin: 50px auto 50px auto;
 }
 
 .article-projects {
