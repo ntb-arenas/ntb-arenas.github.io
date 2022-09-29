@@ -193,3 +193,7 @@ article {
   background-color: #fff;
   color: var(--color-brand);
 }
+
+footer {
+  background-color: #002324;
+}
