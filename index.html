@@ -16,19 +16,20 @@
   </head>
   <body>
     <header>
-      <h1 class="title">
-        Hello, my name is <span class="title-name">Maria Albertina</span><br />
+      <h1 class="header-title">
+        Hello, my name is <span class="header-title-name">Maria Albertina</span><br />
         A Full Stack Developer
       </h1>
-      <a href="#about-link" class="title-button">Find out more</a>
+      <a href="#about-link" class="header-button">Find out more</a>
     </header>
 
     <main>
+      <!-- About -->
       <section class="about" id="about-link">
-        <h2 class="title-about">About me</h2>
-        <div class="content-about">
+        <h2 class="about-title">About me</h2>
+        <div class="about-wrapper">
           <img src="./assets/img/maria-albertina-developer.png" width="250" alt="Developer maria albertina on a computer" />
-          <div class="description-about">
+          <div class="about-container">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, fugiat sunt! Perspiciatis dolorem, culpa quos explicabo commodi nostrum et atque inventore ullam consequuntur praesentium
               odio accusamus sunt voluptatibus, magnam excepturi!
@@ -36,7 +37,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam est facere consequuntur, delectus sunt quaerat, optio eos perferendis fugit vel quasi possimus non molestiae ducimus
               aliquid at culpa maiores? Veritatis!
             </p>
-            <div class="description-link">
+            <div class="about-link">
               <a href="#" class="">View Resume</a>
             </div>
           </div>
@@ -45,49 +46,34 @@
         <blockquote>"Don't comment bad code -rewrite it." <br /><cite>Brian Kernighan</cite></blockquote>
       </section>
 
+      <!-- Projects -->
       <section class="projects">
-        <h2 class="title-projects">Projects</h2>
+        <h2 class="projects-title">Projects</h2>
         <article>
-          <div class="article-projects">
+          <div class="projects-container">
             <h3>Project Title</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam commodi, ea molestiae fugiat harum asperiores porro consectetur rerum quam, in expedita dignissimos explicabo
               accusantium recusandae nisi corporis modi beatae nemo.
             </p>
-            <div class="article-link">
-              <a href="" class="article-link-source">Source Code</a>
-              <a href="" class="article-link-view">View Project</a>
+            <div class="projects-link">
+              <a href="" class="projects-link-source">Source Code</a>
+              <a href="" class="projects-link-view">View Project</a>
             </div>
           </div>
           <img src="./assets/img/projects-webpage.avif" width="350" alt="" />
         </article>
 
         <article>
-          <div class="article-projects">
+          <div class="projects-container">
             <h3>Project Title</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam commodi, ea molestiae fugiat harum asperiores porro consectetur rerum quam, in expedita dignissimos explicabo
               accusantium recusandae nisi corporis modi beatae nemo.
             </p>
-            <div class="article-link">
-              <a href="" class="article-link-source">Source Code</a>
-              <a href="" class="article-link-view">View Project</a>
-            </div>
-          </div>
-
-          <img src="./assets/img/projects-webpage.avif" width="350" alt="" />
-        </article>
-
-        <article>
-          <div class="article-projects">
-            <h3>Project Title</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam commodi, ea molestiae fugiat harum asperiores porro consectetur rerum quam, in expedita dignissimos explicabo
-              accusantium recusandae nisi corporis modi beatae nemo.
-            </p>
-            <div class="article-link">
-              <a href="" class="article-link-source">Source Code</a>
-              <a href="" class="article-link-view">View Project</a>
+            <div class="projects-link">
+              <a href="" class="projects-link-source">Source Code</a>
+              <a href="" class="projects-link-view">View Project</a>
             </div>
           </div>
 
@@ -95,15 +81,31 @@
         </article>
 
         <article>
-          <div class="article-projects">
+          <div class="projects-container">
             <h3>Project Title</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam commodi, ea molestiae fugiat harum asperiores porro consectetur rerum quam, in expedita dignissimos explicabo
               accusantium recusandae nisi corporis modi beatae nemo.
             </p>
-            <div class="article-link">
-              <a href="" class="article-link-source">Source Code</a>
-              <a href="" class="article-link-view">View Project</a>
+            <div class="projects-link">
+              <a href="" class="projects-link-source">Source Code</a>
+              <a href="" class="projects-link-view">View Project</a>
+            </div>
+          </div>
+
+          <img src="./assets/img/projects-webpage.avif" width="350" alt="" />
+        </article>
+
+        <article>
+          <div class="projects-container">
+            <h3>Project Title</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam commodi, ea molestiae fugiat harum asperiores porro consectetur rerum quam, in expedita dignissimos explicabo
+              accusantium recusandae nisi corporis modi beatae nemo.
+            </p>
+            <div class="projects-link">
+              <a href="" class="projects-link-source">Source Code</a>
+              <a href="" class="projects-link-view">View Project</a>
             </div>
           </div>
 
@@ -111,13 +113,18 @@
         </article>
       </section>
 
-      <section class="contact">
-        <h2>Contact</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis amet cumque illum sed qui molestias aspernatur quo dolorem laboriosam eius mollitia nam iste doloribus nostrum
-          sapiente consequatur, culpa quam!
-        </p>
-        <a href="mailto:ntbarenas@gmail.com">Let's talk</a>
+      <!-- Contacts -->
+      <section class="contacts">
+        <div class="contacts-container">
+          <h2 class="contacts-title">Contact</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis amet cumque illum sed qui molestias aspernatur quo dolorem laboriosam eius mollitia nam iste doloribus nostrum
+            sapiente consequatur, culpa quam!
+          </p>
+          <div class="contacts-link">
+            <a href="mailto:ntbarenas@gmail.com">Let's talk</a>
+          </div>
+        </div>
       </section>
     </main>
 
