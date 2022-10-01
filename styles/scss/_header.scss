@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  h1 {
+    color: $colorTextPrimary;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+
+    span {
+      color: $colorBrand;
+    }
+  }
+
+  a {
+    border: 1px solid $colorBrand;
+    border-radius: 3px;
+    color: $colorBrand;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 30px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $colorBrand;
+      color: #fff;
+    }
+  }
+}
