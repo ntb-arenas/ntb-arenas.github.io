@@ -196,4 +196,34 @@ article {
 
 footer {
   background-color: #002324;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+footer ul li {
+  padding: 0 30px;
+}
+
+footer ul li a {
+  font-size: 30px;
+  color: var(--color-text-secondary);
+  transition: 0.3s;
+}
+
+footer ul li a:hover {
+  color: var(--color-brand);
+}
+
+footer p {
+  color: var(--color-text-secondary);
+  margin-top: 15px;
 }
