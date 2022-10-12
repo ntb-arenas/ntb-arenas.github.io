@@ -7,9 +7,10 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -54,7 +55,7 @@ header {
   text-decoration: none;
   padding: 10px;
   margin-top: 30px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-button:hover {
@@ -83,6 +84,11 @@ header {
   margin: 0 auto;
 }
 
+.about-img img {
+  width: 100%;
+  border-radius: 3px;
+}
+
 .about-container {
   padding: 0 50px;
 }
@@ -97,7 +103,7 @@ header {
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 10px;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .about-link a:hover {
@@ -128,6 +134,7 @@ article {
   display: flex;
   align-items: start;
   flex-direction: column;
+  max-width: 900px;
   padding: 0 50px 0 0;
 }
 
@@ -147,7 +154,7 @@ article {
   border-radius: 5px;
   padding: 10px;
   margin-right: 5px;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects-link-source:hover {
@@ -163,7 +170,7 @@ article {
   border-radius: 5px;
   padding: 10px;
   margin-left: 5px;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects-link-view:hover {
@@ -171,11 +178,19 @@ article {
   color: var(--color-brand);
 }
 
+.projects-img {
+  min-width: 300px;
+}
+
+.projects-img img {
+  width: 100%;
+}
+
 .contacts {
   background-color: var(--color-brand);
   color: #fff;
   padding: 10px 25px 50px 25px;
-  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 40%, 100% 0, 100% 101%, 0 101%);
   height: 500px;
   margin-top: 120px;
 }
@@ -201,7 +216,7 @@ article {
   border: 1px solid var(--color-text-secondary);
   border-radius: 5px;
   padding: 10px;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .contacts-link a:hover {
@@ -221,7 +236,6 @@ footer {
 footer ul {
   display: flex;
   justify-content: center;
-  list-style: none;
 }
 
 footer ul li {
@@ -231,7 +245,7 @@ footer ul li {
 footer ul li a {
   font-size: 30px;
   color: var(--color-text-secondary);
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 footer ul li a:hover {
