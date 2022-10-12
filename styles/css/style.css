@@ -24,9 +24,10 @@ header {
 
 .header-title {
   color: var(--color-text-primary);
+  max-width: 850px;
   font-weight: 500;
   font-size: 3rem;
-  line-height: 72px;
+  line-height: 1.4;
 }
 
 .header-title span {
@@ -260,7 +261,7 @@ footer p {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 575.98px) {
   .about {
     height: 1220px;
     padding: 10px 5px 50px;
@@ -329,24 +330,12 @@ footer p {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .header-title {
-    font-size: 2.5rem;
-  }
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 767.98px) {
 }
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .header-title {
-    font-size: 2.5rem;
-  }
+/* Medium devices (tablets, less than 992px) */
+@media only screen and (max-width: 991.98px) {
 }
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .header-title {
-    font-size: 3rem;
-  }
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Large devices (desktops, less than 1200px) */
+@media only screen and (max-width: 1199.98px) {
 }
