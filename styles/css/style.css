@@ -25,7 +25,7 @@ header {
 .header-title {
   color: var(--color-text-primary);
   font-weight: 500;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 72px;
 }
 
@@ -75,7 +75,7 @@ header {
   text-align: center;
   font-weight: 500;
   font-size: 32px;
-  margin: 40px 0 40px 0;
+  margin: 40px 0;
 }
 
 .about-wrapper {
@@ -86,7 +86,7 @@ header {
 
 .about-img img {
   width: 100%;
-  border-radius: 3px;
+  border-radius: 50%;
 }
 
 .about-container {
@@ -143,11 +143,11 @@ article {
 }
 
 .projects-link {
-  flex-direction: row;
   margin-top: 50px;
 }
 
 .projects-link-source {
+  display: inline-block;
   text-decoration: none;
   color: var(--color-brand);
   border: 1px solid var(--color-brand);
@@ -163,6 +163,7 @@ article {
 }
 
 .projects-link-view {
+  display: inline-block;
   text-decoration: none;
   color: #fff;
   background-color: var(--color-brand);
@@ -211,6 +212,7 @@ article {
 }
 
 .contacts-link a {
+  display: inline-block;
   text-decoration: none;
   color: var(--color-text-secondary);
   border: 1px solid var(--color-text-secondary);
@@ -255,4 +257,96 @@ footer ul li a:hover {
 footer p {
   color: var(--color-text-secondary);
   margin-top: 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about {
+    height: 1200px;
+    padding: 10px 5px 50px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
+  .about-title {
+    margin: 10px 0;
+  }
+
+  .about-wrapper {
+    display: block;
+  }
+
+  .about-img {
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .about-container {
+    padding: 0 5px;
+  }
+
+  .projects-title {
+    padding: 0;
+  }
+
+  article {
+    flex-direction: column;
+    padding: 0 5px;
+  }
+
+  .projects-container {
+    order: 2;
+    padding: 0;
+  }
+
+  .projects-img {
+    order: 1;
+  }
+
+  .contacts {
+    height: 445px;
+    padding: 5px 5px 50px;
+    clip-path: polygon(0 21%, 100% 0, 100% 101%, 0 101%);
+  }
+
+  .contacts-container {
+    margin: 140px auto 0;
+  }
+
+  .contacts-title {
+    margin-bottom: 20px;
+  }
+
+  .contacts-link {
+    margin-top: 20px;
+  }
+
+  footer ul li {
+    padding: 0 25px;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header-title {
+    font-size: 2.5rem;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header-title {
+    font-size: 2.5rem;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header-title {
+    font-size: 3rem;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
