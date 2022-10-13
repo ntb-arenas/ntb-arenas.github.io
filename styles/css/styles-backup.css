@@ -223,7 +223,7 @@ footer p {
   margin-top: 15px;
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 578px and down) */
 @media only screen and (max-width: 575.98px) {
   .about {
     height: 1220px;
