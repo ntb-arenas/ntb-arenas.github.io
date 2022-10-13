@@ -121,37 +121,24 @@ header {
 
 .contacts {
   background-color: $color-brand;
-  color: #fff;
-  padding: 10px 25px 50px 25px;
-  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
+  color: $color-text-secondary;
+  padding: 10px 25px 50px;
+  clip-path: polygon(0 40%, 100% 0, 100% 101%, 0 101%);
   height: 500px;
-  margin-top: 120px;
+  margin-top: 10rem;
 
   .contacts-container {
-    margin: 230px auto 0 auto;
+    margin: 13rem auto 0;
     max-width: 1300px;
 
-    h2 {
-      margin-bottom: 40px;
+    .contacts-title {
+      margin-bottom: 2.5rem;
       text-align: center;
     }
+
     .contacts-link {
-      margin-top: 40px;
+      margin-top: 2.5rem;
       text-align: center;
-
-      a {
-        text-decoration: none;
-        color: $color-text-secondary;
-        border: 1px solid $color-text-secondary;
-        border-radius: 5px;
-        padding: 10px;
-        transition: 0.3s;
-
-        &:hover {
-          background-color: #fff;
-          color: $color-brand;
-        }
-      }
     }
   }
 }
