@@ -33,12 +33,12 @@ header {
 .header-title span {
   position: relative;
   color: var(--color-brand);
-  animation-name: test;
+  animation-name: header-span;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
 }
 
-@keyframes test {
+@keyframes header-span {
   0% {
     top: -50px;
     color: var(--color-text-secondary);

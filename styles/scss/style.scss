@@ -1,5 +1,5 @@
 @import "./variables";
-@import "./header";
+@import "./buttons";
 
 * {
   font-family: "Poppins", sans-serif;
@@ -9,8 +9,44 @@
   scroll-behavior: smooth;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+  .header-title {
+    color: $color-text-primary;
+    max-width: 850px;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+
+    span {
+      position: relative;
+      color: $color-brand;
+      animation-name: header-span;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+
+      @keyframes header-span {
+        0% {
+          top: -50px;
+          color: $color-text-secondary;
+        }
+        100% {
+          top: 0px;
+          color: $color-brand;
+        }
+      }
+    }
+  }
+}
+
 .about {
-  background-color: $colorBrand;
+  background-color: $color-brand;
   color: #fff;
   padding: 10px 25px 50px 25px;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -44,7 +80,7 @@
 
           &:hover {
             background-color: #fff;
-            color: $colorBrand;
+            color: $color-brand;
           }
         }
       }
@@ -87,23 +123,23 @@
 
         .projects-link-source {
           text-decoration: none;
-          color: $colorBrand;
-          border: 1px solid $colorBrand;
+          color: $color-brand;
+          border: 1px solid $color-brand;
           border-radius: 5px;
           padding: 10px;
           margin-right: 5px;
           transition: 0.3s;
 
           &:hover {
-            background-color: $colorBrand;
+            background-color: $color-brand;
             color: #fff;
           }
         }
         .projects-link-view {
           text-decoration: none;
           color: #fff;
-          background-color: $colorBrand;
-          border: 1px solid $colorBrand;
+          background-color: $color-brand;
+          border: 1px solid $color-brand;
           border-radius: 5px;
           padding: 10px;
           margin-left: 5px;
@@ -111,7 +147,7 @@
 
           &:hover {
             background-color: #fff;
-            color: $colorBrand;
+            color: $color-brand;
           }
         }
       }
@@ -120,7 +156,7 @@
 }
 
 .contacts {
-  background-color: $colorBrand;
+  background-color: $color-brand;
   color: #fff;
   padding: 10px 25px 50px 25px;
   clip-path: polygon(0 40%, 100% 0, 100% 100%, 0 100%);
@@ -141,15 +177,15 @@
 
       a {
         text-decoration: none;
-        color: $colorTextSecondary;
-        border: 1px solid $colorTextSecondary;
+        color: $color-text-secondary;
+        border: 1px solid $color-text-secondary;
         border-radius: 5px;
         padding: 10px;
         transition: 0.3s;
 
         &:hover {
           background-color: #fff;
-          color: $colorBrand;
+          color: $color-brand;
         }
       }
     }
@@ -174,18 +210,18 @@ footer {
 
       a {
         font-size: 30px;
-        color: $colorTextSecondary;
+        color: $color-text-secondary;
         transition: 0.3s;
 
         &:hover {
-          color: $colorBrand;
+          color: $color-brand;
         }
       }
     }
   }
 
   p {
-    color: $colorTextSecondary;
+    color: $color-text-secondary;
     margin-top: 15px;
   }
 }
