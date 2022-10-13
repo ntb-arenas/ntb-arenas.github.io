@@ -2,6 +2,7 @@
 @import "./buttons";
 @import "./breakpoints";
 
+/* styles reset */
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -10,6 +11,14 @@
   list-style: none;
   scroll-behavior: smooth;
 }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+/* end of styles reset */
 
 header {
   display: flex;
@@ -45,6 +54,10 @@ header {
       }
     }
   }
+
+  .header-link {
+    text-align: center;
+  }
 }
 
 .about {
@@ -55,13 +68,10 @@ header {
   height: 800px;
 
   .about-title {
-    text-align: center;
-    font-weight: 500;
-    font-size: 2rem;
     margin: 40px 0;
   }
 
-  .about-wrapper {
+  .about-content {
     display: flex;
     max-width: 1220px;
     margin: 0 auto;
@@ -71,8 +81,8 @@ header {
       border-radius: 50%;
     }
 
-    .about-container {
-      padding: 0 50px;
+    .about-description {
+      padding-left: 50px;
 
       .about-link {
         margin-top: 40px;
@@ -82,7 +92,6 @@ header {
 
   blockquote {
     text-align: center;
-    margin-top: 50px;
   }
 
   @include xs {
@@ -94,7 +103,7 @@ header {
       margin: 10px 0;
     }
 
-    .about-wrapper {
+    .about-content {
       display: block;
 
       .about-img {
@@ -102,7 +111,7 @@ header {
         margin: auto;
       }
 
-      .about-container {
+      .about-description {
         padding: 0 5px;
       }
     }
@@ -111,27 +120,24 @@ header {
 
 .projects {
   .projects-title {
-    text-align: center;
-    padding: 20px 0;
+    padding: 1.2rem 0;
   }
 
   .projects-article {
     display: flex;
     justify-content: space-around;
-    padding: 0 25px;
-    max-width: 1300px;
-    margin: auto;
-    margin: 50px auto;
+    max-width: 1220px;
+    margin: 3rem auto;
 
     .projects-container {
-      padding-right: 50px;
+      padding-right: 3rem;
 
       h3 {
-        margin-bottom: 20px;
+        margin-bottom: 1.3rem;
       }
 
       .projects-link {
-        margin-top: 50px;
+        margin-top: 1.5rem;
       }
     }
 
@@ -174,7 +180,7 @@ header {
 
   .contacts-container {
     margin: 13rem auto 0;
-    max-width: 1300px;
+    max-width: 1220px;
 
     .contacts-title {
       margin-bottom: 2.5rem;
@@ -211,18 +217,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 200px;
+  height: 12rem;
 
   ul {
     display: flex;
     justify-content: center;
 
     li {
-      padding: 0 30px;
+      padding: 0 1.8rem;
 
       a {
-        font-size: 30px;
+        font-size: 1.8rem;
         color: $color-text-secondary;
         transition: all 0.2s ease-in-out;
 
