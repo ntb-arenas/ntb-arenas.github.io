@@ -119,16 +119,16 @@ blockquote {
 
 .projects-title {
   text-align: center;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
 }
 
-article {
+.projects-article {
   display: flex;
   justify-content: space-around;
-  padding: 0 25px 0 25px;
+  padding: 0 25px;
   max-width: 1300px;
   margin: auto;
-  margin: 50px auto 50px auto;
+  margin: 50px auto;
 }
 
 .projects-container {
@@ -141,39 +141,6 @@ article {
 
 .projects-link {
   margin-top: 50px;
-}
-
-.projects-link-source {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--color-brand);
-  border: 1px solid var(--color-brand);
-  border-radius: 5px;
-  padding: 10px;
-  margin-right: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.projects-link-source:hover {
-  background-color: var(--color-brand);
-  color: #fff;
-}
-
-.projects-link-view {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: var(--color-brand);
-  border: 1px solid var(--color-brand);
-  border-radius: 5px;
-  padding: 10px;
-  margin-left: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.projects-link-view:hover {
-  background-color: #fff;
-  color: var(--color-brand);
 }
 
 .projects-img {

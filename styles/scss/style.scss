@@ -85,62 +85,35 @@ header {
 }
 
 .projects {
-  h2 {
+  .projects-title {
     text-align: center;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
   }
 
-  article {
+  .projects-article {
     display: flex;
     justify-content: space-around;
-    padding: 0 25px 0 25px;
+    padding: 0 25px;
     max-width: 1300px;
     margin: auto;
-    margin: 50px auto 50px auto;
+    margin: 50px auto;
 
     .projects-container {
-      display: flex;
-      align-items: start;
-      flex-direction: column;
-      padding: 0 50px 0 0;
+      padding-right: 50px;
 
       h3 {
         margin-bottom: 20px;
       }
 
       .projects-link {
-        flex-direction: row;
         margin-top: 50px;
+      }
+    }
 
-        .projects-link-source {
-          text-decoration: none;
-          color: $color-brand;
-          border: 1px solid $color-brand;
-          border-radius: 5px;
-          padding: 10px;
-          margin-right: 5px;
-          transition: 0.3s;
-
-          &:hover {
-            background-color: $color-brand;
-            color: #fff;
-          }
-        }
-        .projects-link-view {
-          text-decoration: none;
-          color: #fff;
-          background-color: $color-brand;
-          border: 1px solid $color-brand;
-          border-radius: 5px;
-          padding: 10px;
-          margin-left: 5px;
-          transition: 0.3s;
-
-          &:hover {
-            background-color: #fff;
-            color: $color-brand;
-          }
-        }
+    .projects-img {
+      min-width: 300px;
+      img {
+        width: 100%;
       }
     }
   }
