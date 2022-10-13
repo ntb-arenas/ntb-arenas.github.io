@@ -1,8 +1,10 @@
 $breakpoints: (
-  "xs": 575.98px,
-  "sm": 767.98px,
-  "md": 991.98px,
-  "lg": 1199.98px,
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
 );
 //  "xs" Extra small devices (phones, 578px and down)
 //  "sm" Small devices (landscape phones, less than 768px)
@@ -12,7 +14,6 @@ $breakpoints: (
 @mixin xs {
   @media (max-width: map-get($breakpoints, "xs")) {
     // Using max-width seems to make more sense to me personally since we are building this portfolio desktop first
-
     @content;
     // We use @content because we don't want to hard-code and make our mixins reusable
   }
@@ -29,6 +30,16 @@ $breakpoints: (
 }
 @mixin lg {
   @media (max-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (max-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media (max-width: map-get($breakpoints, "xxl")) {
     @content;
   }
 }
