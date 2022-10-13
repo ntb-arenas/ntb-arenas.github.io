@@ -131,6 +131,27 @@ header .header-title span {
   text-align: center;
   margin-top: 50px;
 }
+@media (max-width: 575.98px) {
+  .about {
+    height: 1220px;
+    padding: 10px 5px 50px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  }
+  .about .about-title {
+    margin: 10px 0;
+  }
+  .about .about-wrapper {
+    display: block;
+  }
+  .about .about-wrapper .about-img {
+    max-width: 350px;
+    margin: auto;
+  }
+  .about .about-wrapper .about-container {
+    padding: 0 5px;
+  }
+}
 
 .projects .projects-title {
   text-align: center;
@@ -159,6 +180,22 @@ header .header-title span {
 .projects .projects-article .projects-img img {
   width: 100%;
 }
+@media (max-width: 575.98px) {
+  .projects .projects-title {
+    padding: 0;
+  }
+  .projects .projects-article {
+    flex-direction: column;
+    padding: 0 5px;
+  }
+  .projects .projects-article .projects-container {
+    order: 2;
+    padding: 0;
+  }
+  .projects .projects-article .projects-container .projects-img {
+    order: 1;
+  }
+}
 
 .contacts {
   background-color: #6608c5;
@@ -180,6 +217,23 @@ header .header-title span {
 .contacts .contacts-container .contacts-link {
   margin-top: 2.5rem;
   text-align: center;
+}
+@media (max-width: 575.98px) {
+  .contacts {
+    height: 445px;
+    padding: 5px 5px 50px;
+    -webkit-clip-path: polygon(0 21%, 100% 0, 100% 101%, 0 101%);
+            clip-path: polygon(0 21%, 100% 0, 100% 101%, 0 101%);
+  }
+  .contacts .contacts-container {
+    margin: 140px auto 0;
+  }
+  .contacts .contacts-container .contacts-title {
+    margin-bottom: 20px;
+  }
+  .contacts .contacts-container .contacts-link {
+    margin-top: 20px;
+  }
 }
 
 footer {
@@ -208,4 +262,12 @@ footer ul li a:hover {
 footer p {
   color: #fff;
   margin-top: 1rem;
+}
+@media (max-width: 575.98px) {
+  footer ul li {
+    padding: 0 25px;
+  }
+  footer p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
