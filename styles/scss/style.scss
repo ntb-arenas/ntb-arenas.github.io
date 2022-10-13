@@ -47,42 +47,33 @@ header {
 
 .about {
   background-color: $color-brand;
-  color: #fff;
-  padding: 10px 25px 50px 25px;
+  color: $color-text-secondary;
+  padding: 10px 25px 50px;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   height: 800px;
 
-  h2 {
+  .about-title {
     text-align: center;
     font-weight: 500;
-    font-size: 32px;
-    margin: 40px 0 40px 0;
+    font-size: 2rem;
+    margin: 40px 0;
   }
 
   .about-wrapper {
     display: flex;
-    max-width: 1300px;
-    margin: 0 auto 0 auto;
+    max-width: 1220px;
+    margin: 0 auto;
+
+    .about-img img {
+      width: 100%;
+      border-radius: 50%;
+    }
 
     .about-container {
-      padding: 0 50px 0 50px;
+      padding: 0 50px;
 
       .about-link {
         margin-top: 40px;
-
-        a {
-          text-decoration: none;
-          color: #fff;
-          border: 1px solid #fff;
-          border-radius: 5px;
-          padding: 10px;
-          transition: 0.3s;
-
-          &:hover {
-            background-color: #fff;
-            color: $color-brand;
-          }
-        }
       }
     }
   }
